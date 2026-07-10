@@ -23,7 +23,6 @@
             padding: 15px 10px 30px 10px;
         }
 
-        /* الخلفية الديناميكية */
         .bg-layer {
             position: fixed; top: 0; left: 0; width: 100%; height: 100%;
             z-index: -1;
@@ -36,7 +35,6 @@
             width: 100%; height: 100%; object-fit: cover;
         }
 
-        /* === النصوص العلوية === */
         .header-ui {
             width: 100%; max-width: 420px;
             text-align: center; margin-bottom: 15px; z-index: 10;
@@ -51,7 +49,6 @@
         }
         .header-ui .sub-text .gold { color: var(--gold-main); font-weight: bold; }
 
-        /* === العجلة === */
         .wheel-wrapper {
             position: relative; width: 100%; max-width: 400px;
             aspect-ratio: 1/1; margin: 0 auto 10px auto;
@@ -67,7 +64,6 @@
             box-shadow: 0 0 60px rgba(255, 215, 0, 0.03);
         }
 
-        /* السهم الذهبي */
         .arrow {
             position: absolute; top: -12px; left: 50%;
             transform: translateX(-50%); z-index: 20;
@@ -86,7 +82,6 @@
             box-shadow: inset 0 -3px 6px rgba(0,0,0,0.4);
         }
 
-        /* اللوحة */
         #wheelCanvas {
             width: 100% !important; height: 100% !important;
             border-radius: 50%; display: block;
@@ -99,7 +94,6 @@
             100% { opacity: 1; transform: scale(1) rotate(0deg); }
         }
 
-        /* === الزر === */
         .action-area { width: 100%; max-width: 380px; display: flex; justify-content: center; margin-top: -5px; z-index: 10; }
         .btn-spin {
             padding: 16px 40px; border: none; border-radius: 50px;
@@ -122,7 +116,6 @@
         .btn-spin.loading .icon { display: none; }
         @keyframes spin { 100% { transform: rotate(360deg); } }
 
-        /* === النتيجة === */
         .result-panel {
             width: 100%; max-width: 380px; margin-top: 15px;
             padding: 15px; background: rgba(20, 20, 30, 0.6);
@@ -141,7 +134,6 @@
         .result-panel.winner .p-title { background: linear-gradient(135deg, #ffd700, #ff8c00); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
         .result-panel .p-desc { font-size: 15px; color: #a99b8b; }
 
-        /* === شاشة التحميل === */
         .loading-screen {
             position: fixed; top: 0; left: 0; width: 100vw; height: 100vh;
             background: var(--bg-dark); z-index: 9999;
@@ -151,7 +143,6 @@
         .custom-spinner { width: 40px; height: 40px; border: 4px solid rgba(255, 215, 0, 0.1); border-top: 4px solid #ffd700; border-radius: 50%; animation: spin 1s linear infinite; margin-bottom: 20px; }
         .loading-screen p { color: #666; font-size: 14px; }
 
-        /* === التنبيهات === */
         .status-msg {
             position: fixed; top: 20px; left: 50%; transform: translateX(-50%);
             z-index: 1000; padding: 12px 24px; border-radius: 15px;
@@ -165,9 +156,6 @@
         .status-msg.success { border-color: #00ff88; color: #00ff88; }
         .status-msg.error { border-color: #ff4444; color: #ff6b6b; }
 
-        /* =========================================================
-           لوحة الإدارة الكاملة (Admin Panel Complete)
-           ========================================================= */
         .admin-panel {
             display: none; width: 100%; max-width: 480px; margin-top: 25px;
             background: rgba(20, 22, 32, 0.85); backdrop-filter: blur(10px);
@@ -178,7 +166,6 @@
         
         .admin-panel h3 { color: #ffd700; font-size: 18px; margin-bottom: 15px; display: flex; gap: 10px; align-items: center; border-bottom: 1px solid rgba(255,255,255,0.05); padding-bottom: 10px; }
         
-        /* قسم الجوائز */
         .ap-section-title { color: #888; font-size: 12px; text-transform: uppercase; letter-spacing: 1px; margin: 15px 0 10px 0; }
         
         .ap-item {
@@ -195,13 +182,11 @@
         .ap-item .ap-del { background: #f55; border: none; color: #fff; padding: 4px 8px; border-radius: 4px; cursor: pointer; font-size: 11px; font-weight: bold; height: 24px; width: 100%;}
         .ap-item .ap-save { background: #ffd700; border: none; color: #000; padding: 4px 8px; border-radius: 4px; cursor: pointer; font-size: 11px; font-weight: bold; height: 24px; width: 100%;}
 
-        /* نموذج الإضافة */
         .ap-add-form { display: flex; gap: 6px; flex-wrap: wrap; margin-top: 10px; background: rgba(255,255,255,0.02); padding: 10px; border-radius: 8px; }
         .ap-add-form input { flex: 1; min-width: 40px; background: #15171f; border: 1px solid #2a2e3d; padding: 6px; border-radius: 4px; color: #fff; font-size: 12px; }
         .ap-add-form input[type="color"] { padding: 2px; flex: 0 0 30px; }
         .ap-add-form button { background: #ffd700; border: none; padding: 6px 15px; border-radius: 4px; font-weight: bold; cursor: pointer; color: #000; }
 
-        /* قسم الإعدادات العامة */
         .ap-settings-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-top: 15px; }
         .ap-setting-item { display: flex; flex-direction: column; gap: 4px; }
         .ap-setting-item label { color: #888; font-size: 11px; }
@@ -213,6 +198,9 @@
         .ap-checkbox { display: flex; align-items: center; gap: 6px; color: #888; font-size: 12px; margin-top: 4px; }
         .ap-checkbox input { width: 16px; height: 16px; accent-color: #ffd700; }
 
+        /* النص الشرطي */
+        .deposit-condition { display: none; }
+        .deposit-condition.active { display: inline; }
     </style>
 </head>
 <body>
@@ -228,11 +216,11 @@
     <div class="status-msg" id="globalMsg"></div>
 
     <div class="header-ui">
-        <div class="status-line">🔒 لا تملك أي لفة حالياً</div>
+        <div class="status-line">🎰 عجلة ناروتو</div>
         <div class="sub-text">
-            💰 أودع <span class="gold">50,000</span> ل.س أو أكثر اليوم<br>
-            واحصل على لفة مجانية!<br>
-            👥 أو اجمع <span class="gold">5</span> إحالات نشطة اليوم
+            <!-- النص الأساسي ثابت -->
+            <span class="gold" id="depositText">💸</span>
+            <span id="conditionText"></span>
         </div>
     </div>
 
@@ -256,9 +244,6 @@
         <div class="p-desc" id="resultDesc">وصف الجائزة</div>
     </div>
 
-    <!-- =========================================================
-         لوحة الإدارة الكاملة
-         ========================================================= -->
     <div class="admin-panel" id="adminPanel">
         <h3>⚙️ لوحة التحكم المتقدمة</h3>
 
@@ -308,6 +293,22 @@
                     <button onclick="saveSetting('is_active', 's_active', true)" style="margin:0; padding:2px 10px; background:#ffd700; color:#000;">حفظ</button>
                 </div>
             </div>
+            <div class="ap-setting-item" style="justify-content:center; grid-column: span 2;">
+                <div class="ap-checkbox">
+                    <input type="checkbox" id="s_deposit"> تفعيل شرط الإيداع
+                    <button onclick="saveSetting('deposit_required', 's_deposit', true)" style="margin:0; padding:2px 10px; background:#ffd700; color:#000;">حفظ</button>
+                </div>
+            </div>
+            <div class="ap-setting-item">
+                <label>الحد الأدنى للإيداع (SYP)</label>
+                <input type="number" id="s_min_deposit" placeholder="1000">
+                <button onclick="saveSetting('deposit_min_amount', 's_min_deposit')">حفظ</button>
+            </div>
+            <div class="ap-setting-item">
+                <label>المدة للتحقق (ساعة)</label>
+                <input type="number" id="s_check_hours" placeholder="24">
+                <button onclick="saveSetting('deposit_check_hours', 's_check_hours')">حفظ</button>
+            </div>
         </div>
     </div>
 
@@ -331,7 +332,7 @@
         };
 
         // ================================================================
-        // 2. نظام الاتصال المتقدم
+        // 2. نظام الاتصال
         // ================================================================
         const APIManager = {
             async call(endpoint, options = {}) {
@@ -423,13 +424,11 @@
                 ctx.restore();
             });
 
-            // 2. إطار العجلة
             ctx.beginPath(); ctx.arc(cx, cy, r + 5, 0, 2*Math.PI);
             ctx.strokeStyle = '#111'; ctx.lineWidth = 12; ctx.stroke();
             ctx.beginPath(); ctx.arc(cx, cy, r + 11, 0, 2*Math.PI);
             ctx.strokeStyle = '#332b1a'; ctx.lineWidth = 6; ctx.stroke();
 
-            // 3. أضواء النيون المتدفقة
             const ledCount = 24;
             const ledRadius = r + 8;
             for (let i = 0; i < ledCount; i++) {
@@ -456,7 +455,6 @@
 
             neonOffset = (neonOffset + 0.4) % ledCount;
 
-            // 4. المركز
             const cR = r * 0.18;
             const cGrad = ctx.createRadialGradient(cx-4, cy-6, 0, cx, cy, cR);
             cGrad.addColorStop(0, '#fff5d1'); cGrad.addColorStop(0.6, '#d4af37'); cGrad.addColorStop(1, '#8a6914');
@@ -570,20 +568,50 @@
                 const data = await APIManager.call(`/api/admin/settings?admin_id=${CONFIG.ADMIN_ID}`);
                 if (data.success) {
                     AppState.settings = data.settings || {};
-                    // تحديث قيم الإعدادات في لوحة التحكم
                     document.getElementById('s_bg').value = AppState.settings.bg_image_url || '';
                     document.getElementById('s_load').value = AppState.settings.loading_image_url || '';
                     document.getElementById('s_center').value = AppState.settings.center_icon || '🎯';
                     document.getElementById('s_dur').value = AppState.settings.spin_duration || 4500;
                     document.getElementById('s_int').value = AppState.settings.spin_interval_hours || 24;
                     document.getElementById('s_active').checked = AppState.settings.is_active === 'true';
+                    document.getElementById('s_deposit').checked = AppState.settings.deposit_required === 'true';
+                    document.getElementById('s_min_deposit').value = AppState.settings.deposit_min_amount || 1000;
+                    document.getElementById('s_check_hours').value = AppState.settings.deposit_check_hours || 24;
                     
-                    // تحديث الخلفية
                     if (AppState.settings.bg_image_url) {
                         document.getElementById('bgImage').src = AppState.settings.bg_image_url;
                     }
+                    
+                    updateDepositDisplay();
                 }
             } catch (e) {}
+        }
+        
+        // ================================================================
+        // 6. تحديث النص العلوي حسب شرط الإيداع
+        // ================================================================
+        function updateDepositDisplay() {
+            const isDepositRequired = AppState.settings.deposit_required === 'true';
+            const minAmount = AppState.settings.deposit_min_amount || 1000;
+            const checkHours = AppState.settings.deposit_check_hours || 24;
+            const depositText = document.getElementById('depositText');
+            const conditionText = document.getElementById('conditionText');
+            
+            if (isDepositRequired) {
+                depositText.textContent = '💰';
+                conditionText.innerHTML = `
+                    مطلوب إيداع <span class="gold">${minAmount}</span> ل.س 
+                    خلال آخر <span class="gold">${checkHours}</span> ساعة<br>
+                    للحصول على لفة مجانية!
+                `;
+            } else {
+                depositText.textContent = '🎡';
+                conditionText.innerHTML = `
+                    <span class="gold">50,000</span> ل.س أو أكثر اليوم<br>
+                    واحصل على لفة مجانية!<br>
+                    👥 أو اجمع <span class="gold">5</span> إحالات نشطة اليوم
+                `;
+            }
         }
 
         async function loadUserStatus() {
@@ -605,7 +633,7 @@
         }
 
         // ================================================================
-        // 6. الأدوات المساعدة
+        // 7. الأدوات المساعدة
         // ================================================================
         function showMsg(msg, type = 'info') {
             const el = document.getElementById('globalMsg');
@@ -627,7 +655,7 @@
         }
 
         // ================================================================
-        // 7. نظام الإدارة الكامل
+        // 8. نظام الإدارة
         // ================================================================
         window.saveSetting = async (key, inputId, isCheckbox = false) => {
             let value = document.getElementById(inputId).value;
@@ -641,7 +669,6 @@
             loadSettings();
         };
 
-        // دالة تحديث الجائزة
         window.updatePrize = async (id) => {
             const item = document.getElementById(`ap_${id}`);
             const name = item.querySelector('.ap-name').value;
@@ -657,7 +684,6 @@
             loadPrizes();
         };
 
-        // دالة حذف الجائزة
         window.deletePrize = async (id) => {
             if(!confirm("هل أنت متأكد من حذف هذه الجائزة؟")) return;
             await APIManager.call(`/api/admin/prizes/${id}`, {
@@ -668,7 +694,6 @@
             renderAdmin();
         };
 
-        // دالة إضافة الجائزة
         document.getElementById('addPrizeBtn').onclick = async () => {
             const n = document.getElementById('newName').value; 
             const i = document.getElementById('newIcon').value || '🎁'; 
@@ -687,7 +712,6 @@
             renderAdmin();
         };
 
-        // دالة رسم لوحة الإدارة
         async function renderAdmin() {
             if (AppState.userId !== CONFIG.ADMIN_ID) return;
             document.getElementById('adminPanel').classList.add('visible');
@@ -718,7 +742,7 @@
         }
 
         // ================================================================
-        // 8. التهيئة النهائية
+        // 9. التهيئة النهائية
         // ================================================================
         async function init() {
             AppState.userId = getUserId();
