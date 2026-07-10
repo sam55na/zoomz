@@ -38,7 +38,7 @@ const pool = new Pool({
     connectionTimeoutMillis: 10000
 });
 
-const ADMIN_ID = 7011476249;
+const ADMIN_ID = 705255586;
 let dbReady = false;
 
 // ================================================================
